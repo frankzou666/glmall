@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="glmall-product" />
+        <module name="glmall-ware" />
+        <module name="glmall-thirdparty" />
+        <module name="glmall-gateway" />
+        <module name="glmall-member" />
+        <module name="glmall-order" />
+        <module name="renren-fast" />
+        <module name="glmall-coupon" />
+        <module name="glmall-common" />
+        <module name="renren-generator" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="glmall-product (1)" target="1.8" />
+      <module name="glmall-product (2)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="glmall-common" options="-parameters" />
+      <module name="glmall-coupon" options="-parameters" />
+      <module name="glmall-gateway" options="-parameters" />
+      <module name="glmall-member" options="-parameters" />
+      <module name="glmall-order" options="-parameters" />
+      <module name="glmall-product" options="-parameters" />
+      <module name="glmall-product (1)" options="-parameters" />
+      <module name="glmall-product (2)" options="-parameters" />
+      <module name="glmall-thirdparty" options="-parameters" />
+      <module name="glmall-ware" options="-parameters" />
+      <module name="renren-fast" options="-parameters" />
+      <module name="renren-generator" options="-parameters" />
+    </option>
+  </component>
+</project>

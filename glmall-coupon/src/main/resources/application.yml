@@ -1,0 +1,22 @@
+server:
+  port: 9100
+
+
+spring:
+  applicatƒion:
+    name: glmall-coupon
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.146:8848
+        namespace: glmall
+        group: glmall
+      config:
+        server-addr: 192.168.1.146:8848
+        namespace: glmall
+        group: glmall
+  config:
+    import:
+      - optional:nacos:common.yaml?group=glmalll&refreshEnabled=true   #项目公用配置
+      - nacos:coupon.yaml?group=glmalll&refreshEnabled=true    #子项目特殊配置
+

@@ -1,0 +1,24 @@
+server:
+  port: 9500
+
+spring:
+  application:
+    name: glmall-ware
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.146:11337/gulimall_wms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: wms_user
+    password: app123456
+    initial-size: 10
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.146:8848
+        namespace: glmall
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  global-config:
+    db-config:
+      id-type: auto

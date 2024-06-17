@@ -1,0 +1,29 @@
+server:
+  port: 9900
+
+spring:
+  application:
+    name: glmall-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.146:8848
+        namespace: glmall
+        group: glmall
+      config:
+        server-addr: 192.168.1.146:8848
+        namespace: glmall
+        group: glmall
+  config:
+    import:
+      - optional:nacos:common.yaml?group=glmalll&refreshEnabled=true   #项目公用配置
+      - nacos:glmall-gateway.yaml?group=glmalll&refreshEnabled=true    #子项目特殊配置
+
+
+logging:
+  level:
+    root: INFO
+    org:
+      springframework:
+        cloud:
+          gateway: DEBUG

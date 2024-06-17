@@ -1,0 +1,20 @@
+server:
+  port: 9200
+
+spring:
+  application:
+    name: glmall-member
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.1.146:8848
+        namespace: glmall
+      config:
+        server-addr: 192.168.1.146:8848
+        namespace: glmall
+  config:
+    import:
+      - optional:nacos:common.yaml?group=glmalll&refreshEnabled=true   #项目公用配置
+      - nacos:member.yaml?group=glmalll&refreshEnabled=true    #子项目特殊配置
+
+

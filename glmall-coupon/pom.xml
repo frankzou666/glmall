@@ -7,6 +7,7 @@
         <groupId>com.gmall</groupId>
         <artifactId>glmall</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>glmall-coupon</artifactId>
@@ -16,5 +17,17 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.gmall</groupId>
+            <artifactId>glmall-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+
+
+
+    </dependencies>
 
 </project>
